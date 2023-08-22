@@ -64,7 +64,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def downloader(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     msg = update.message.text
     if msg.startswith('https://vt.tiktok.com') or msg.startswith('https://www.tiktok.com'):
-        await update.message.reply_text('Converting to MP3...')
+        await update.message.reply_text('Received your URL! Hold on while I convert to MP3...')
         try:
             download = downloader_script.download(msg)
             title = download[0]

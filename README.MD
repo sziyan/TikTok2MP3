@@ -2,6 +2,8 @@
 
 The sole purpose of this Telegram bot is to parse in a TikTok URL, use yt-dlp to extract audio and convert it to MP3 format.
 
+Files and URL are deleted after uploaded to Telegram to ensure privacy.
+
 ## Requirements
 - Python3
 - ffmpeg
